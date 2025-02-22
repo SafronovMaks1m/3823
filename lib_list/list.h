@@ -62,6 +62,9 @@ private:
             _pcur = _pcur->next();
             return *this;
         }
+        TNode<T>* pcur() {
+            return _pcur;
+        }
         bool operator!=(const TIterator& iter) const noexcept {
             return _pcur != iter._pcur;
         }
